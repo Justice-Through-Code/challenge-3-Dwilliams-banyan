@@ -63,8 +63,8 @@ def snippet_5():
 
     print (f"The value of o ({o}) is False since Python is case-sensitive.")
     assert(o == True)  # <-- DO NOT EDIT THIS LINE
-snippet_5()
-snippet_4()
-snippet_3()
-snippet_2()
-snippet_1()
+# snippet_5()
+# snippet_4()
+# snippet_3()
+# snippet_2()
+# snippet_1()
