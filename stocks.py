@@ -45,5 +45,5 @@ def stock_purchases():
     # Use an f-string to print the result for the client, ala:
     # Alex has $5000 to invest and can buy 50 shares of Apple at the current price of $100.
     shares = int(shares)
-    print(f'{client} has ${investing_amount} to invest and can buy {shares} shares of {stock_name} at the current price of ${stock_price}')
+    print(f'{client} has ${investing_amount} to invest and can buy {shares} shares of {stock_name} at the current price of ${stock_price}.')
 # stock_purchases()

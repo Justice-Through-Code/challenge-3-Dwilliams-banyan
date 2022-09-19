@@ -59,9 +59,10 @@ def snippet_5():
     m = "GOAT"
     n = "goat"
 
-    o = (m != n)
+    o = (not m == n)
+    print(o)
 
-    print (f"The value of o ({o}) is False since Python is case-sensitive.")
+    print (f"The value of o ({o}) is True since Python is case-sensitive.")
     assert(o == True)  # <-- DO NOT EDIT THIS LINE
 # snippet_5()
 # snippet_4()
