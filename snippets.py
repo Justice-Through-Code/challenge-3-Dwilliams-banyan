@@ -45,11 +45,12 @@ def snippet_3():
 def snippet_4():
     # TODO: Modify exactly one boolean operator in the assignment of d, so that d evaluates to False
 
-    d = (5 > 7) or not (8 < 20)
+    d = (5 < 7) and not (8 < 20)
 
     # TODO: Explain how d is set to False in a comment
     assert(d == False)  # <-- DO NOT EDIT THIS LINE
-    # d is set to false because (5 > 7) is false and (8 < 20) is true but that gets reversed to False becuase of the not.
+    # d is set to false because (5 < 7) is True and (8 < 20) is true but that gets reversed to False becuase of the not so both
+    # will not be true.
 
 
 def snippet_5():
