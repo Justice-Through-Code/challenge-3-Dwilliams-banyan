@@ -1,10 +1,12 @@
 
 def stock_purchases():
-    amazon = 3000
-    apple = 100
-    fb = 250
-    google = 1400
-    msft = 200
+    stocks = {
+        'Amazon': 3000,
+        'Apple': 100,
+        'Fb': 250,
+        'Google': 1400,
+        'Msft': 200
+    }
 
     # Given the prices above and a client's investment budget, how much stock can they buy?
     # 1.1 TODO: Ask the client's name (use the string: "What is your name? ") and save it into a variable
@@ -23,20 +25,15 @@ def stock_purchases():
     # 1.4 TODO: Use `if/elif/else` conditional logic to determine how much stock the client can buy,
     # and save it in a variable
     if stock_name == 'Amazon':
-        stock_price = 3000
-        shares = int(investing_amount) / 3000
+        shares = int(investing_amount) / stocks['Amazon']
     elif stock_name == 'Apple':
-        stock_price = 100
-        shares = int(investing_amount) / 100
+        shares = int(investing_amount) / stocks['Apple']
     elif stock_name == 'Facebook':
-        stock_price = 250
-        shares = int(investing_amount) / 250
+        shares = int(investing_amount) / stocks['Fb']
     elif stock_name == 'Google':
-        stock_price = 1400
-        shares = int(investing_amount) / 1400
+        shares = int(investing_amount) / stocks['Google']
     elif stock_name == 'Microsoft':
-        stock_price = 200
-        shares = int(investing_amount) / 200
+        shares = int(investing_amount) / stocks['Msft']
     else:
         print(f'Could not find {stock_name} please try again.')
 
@@ -45,5 +42,5 @@ def stock_purchases():
     # Use an f-string to print the result for the client, ala:
     # Alex has $5000 to invest and can buy 50 shares of Apple at the current price of $100.
     shares = int(shares)
-    print(f'{client} has ${investing_amount} to invest and can buy {shares} shares of {stock_name} at the current price of ${stock_price}.')
+    print(f'{client} has ${investing_amount} to invest and can buy {shares} shares of {stock_name} at the current price of ${stocks[stock_name]}.')
 # stock_purchases()
